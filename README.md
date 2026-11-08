@@ -20,7 +20,7 @@ npm run build
 npm run preview
 ```
 
-Deploy the generated `dist/` directory to a static hosting service. For subdirectory hosting, set `VITE_BASE_PATH` during the build (for example, `/debesh-web/`). The app uses this path for scripts, styles and public images.
+Deploy the generated `dist/` directory to a static hosting service. For subdirectory hosting, set `VITE_BASE_PATH` during the build (for example, `/portfolio/`). The app uses this path for scripts, styles and public images.
 
 ## GitHub Pages
 
@@ -28,7 +28,7 @@ The workflow in `.github/workflows/deploy.yml` builds and publishes the website 
 
 In the repository's **Settings → Pages**, use **GitHub Actions** as the publishing source. The workflow reads the Pages URL to set asset paths automatically, including the portrait. The repository's default Pages URL is:
 
-https://debeshlohani.github.io/debesh-web/
+https://debeshlohani.github.io/
 
 Collaborators can edit `content.json` directly on GitHub and commit their changes. The workflow validates the content before publishing; a failed build leaves the last successful deployment in place. No local Node.js installation is required to update text this way.
 
